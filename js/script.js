@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
             form.classList.remove('_sending')
 
            }else{
-            alert('Bug')
+            alert('Try again')
+            // formPreview.innerHTML = '';
+            // form.classList.remove('_sending')
            }
         }else{
             alert("Write correct info")
