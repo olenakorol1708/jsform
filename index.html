@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/select.css"
+    <title>Form mailer</title>
+</head>
+<body>
+  <div class = 'wrapper'>
+    <div class = 'form'>
+        <form action = "#" id = "form" class = "form__body">
+            <h1 class = "form__title">Send data</h1>
+            <div class = "form__item">
+                <label for = "formName" class = "from__label">Name*:</label>
+                <input id = "formName" type = 'text' name = 'name' class = "form__input _req">
+            </div>
+            <div class = "form__item">
+                <label for = "formEmail" class = "from__label">Email*:</label>
+                <input id = "formEmail" type = 'text' name = 'email' class = "form__input _req">
+            </div>
+            <div class="form__item">
+                <div class="form__label">Левша или правша?</div>
+                <div class="options">
+                    <div class="options__item">
+                        <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+                        <label for="formRightHanded" class="options__label"><span>Правша</span></label>
+                    </div>
+                    <div class="options__item">
+                        <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                        <label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class = "form__item">
+                <label for = "forMessage" class = "from__label">Message:</label>
+              <textarea id = "forMessage" name = "message" class = "form__input"></textarea>
+            </div>
+            <div class = "form__item">
+                <div class = "from__label">What price is suitable for you?</div>
+                <select name = "price" class = "select">
+                    <option value ="from 10 to 30 USD">Chip Price</option>
+                    <option value = "from 30 to 50 USD">Middle Price</option>
+                    <option value = "from 50 to 100 USD"> Expensive Price</option>
+                </select>
+            </div>
+            <div class = "form__item">
+                <div class ="from__label"> Choose an Image</div>
+                <div class = "file">
+                    <div class = "file__item">
+                        <input id = "formImage" accept = ".jpg, .png, .gif" type ="file" name = "image" class = "file__input">
+                        <div class = "file__button">Add image</div>
+                    </div>
+                    <div id = "formPreview" class="file__preview">
+
+                    </div>
+                </div>
+            </div>
+            <div class = "form__item">
+                <div class="checkbox">
+                    <input id = "formAgreement"  checked type = "checkbox" name = "agreement" class = "checkbox__input _req">
+                    <label for = "formAgreement" class = "checkbox__label"><span>I agree with using my personal info for this website <a href="">Conditions</a>*</span></label>
+                </div>
+
+            </div>
+            <button  type = "submit" class = "form__button">Submit</button>
+        </form>
+    </div>
+  </div>
+  <script src ="js/script.js"></script>  
+  <script src = "js/select.js"></script>
+</body>
+</html>
