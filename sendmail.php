@@ -18,9 +18,9 @@
 	$mail->Subject = 'Привет! Это "ShopCom"';
 
 	//Рука
-	$hand = "Правая";
-	if($_POST['hand'] == "left"){
-		$hand = "Левая";
+	$book = "Used";
+	if($_POST['book'] == "New"){
+		$book = "New";
 	}
 
 	//Тело письма

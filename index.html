@@ -10,7 +10,7 @@
 <body>
   <div class = 'wrapper'>
     <div class = 'form'>
-        <form action = "#" id = "form" class = "form__body">
+        <form action = "#" id = "form" class = "form__body" netlify>
             <h1 class = "form__title">Send data</h1>
             <div class = "form__item">
                 <label for = "formName" class = "from__label">Name*:</label>
@@ -21,15 +21,15 @@
                 <input id = "formEmail" type = 'text' name = 'email' class = "form__input _req">
             </div>
             <div class="form__item">
-                <div class="form__label">Левша или правша?</div>
+                <div class="form__label">Used book or a new book?</div>
                 <div class="options">
                     <div class="options__item">
                         <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
-                        <label for="formRightHanded" class="options__label"><span>Правша</span></label>
+                        <label for="formRightHanded" class="options__label"><span>USED</span></label>
                     </div>
                     <div class="options__item">
                         <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
-                        <label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+                        <label for="formLeftHanded" class="options__label"><span>NEW</span></label>
                     </div>
                 </div>
             </div>
